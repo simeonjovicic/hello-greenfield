@@ -4,3 +4,19 @@ A very small Java project used in CO3408 Lab 5 to start a new (greenfield) Git r
 
 Requires Java 17 or later (tested on Java 17, 21 and 25) and Maven 3.9 or later.
 IntelliJ IDEA and Eclipse include Maven: open this folder as a Maven project.
+
+## How to build and run
+
+Compile, test and build the jar, then run it:
+
+```
+mvn package
+java -jar target/hello-greenfield-1.0.0.jar
+```
+
+This prints `Hello, World!`. You can also pass a name to the program as the first
+command-line argument and it will greet that name instead:
+
+```
+java -jar target/hello-greenfield-1.0.0.jar Simeon      # Hello, Simeon!
+```
